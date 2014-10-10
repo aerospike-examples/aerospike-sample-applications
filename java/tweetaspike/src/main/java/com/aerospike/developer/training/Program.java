@@ -65,7 +65,7 @@ public class Program {
 		// Establish a connection to Aerospike cluster
 		ClientPolicy cPolicy = new ClientPolicy();
 		cPolicy.timeout = 500;
-		this.client = new AerospikeClient(cPolicy, "54.90.203.181", port);
+		this.client = new AerospikeClient(cPolicy, "127.0.0.1", port);
 		this.seedHost = host;
 		this.port = port;
 		this.namespace = namespace;
@@ -90,7 +90,7 @@ public class Program {
 			CommandLineParser parser = new PosixParser();
 			CommandLine cl = parser.parse(options, args, false);
 
-			String host = cl.getOptionValue("h", "54.90.203.181");
+			String host = cl.getOptionValue("h", "127.0.0.1");
 			String portString = cl.getOptionValue("p", "3000");
 			int port = Integer.parseInt(portString);
 			String namespace = cl.getOptionValue("n", "test");

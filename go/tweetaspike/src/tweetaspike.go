@@ -34,7 +34,7 @@ func main() {
 	
 	fmt.Println("INFO: Connecting to Aerospike cluster...")
 	// Establish connection to Aerospike server
-	client, err := NewClient("54.163.76.64", 3000)
+	client, err := NewClient("127.0.0.1", 3000)
 	panicOnError(err)
 	defer client.Close()
 
