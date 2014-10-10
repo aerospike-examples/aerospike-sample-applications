@@ -8,7 +8,7 @@ The purpose of this sample application is to show that Aerospike data structures
 
 #### And
 
-**For C# Developers: Aerospike C# Client** — if you don’t have it installed, [click here](http://www.aerospike.com/docs/client/csharp/install) to install it.
+**For C# Developers: Aerospike C# Client** — if you don’t have it installed, [click here](http://www.aerospike.com/docs/client/csharp/install) to install it.    
 **For Java Developers: Aerospike Java Client** — if you don’t have it installed, [click here](http://www.aerospike.com/docs/client/java/install) to install it.
 
 ## You Will Learn
