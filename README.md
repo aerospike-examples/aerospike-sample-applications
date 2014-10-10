@@ -5,7 +5,8 @@ The purpose of this sample application is to show that Aerospike data structures
 ## Prerequisites: 
 
 - **Aerospike Server** - If you don't have it installed, [click here](http://www.aerospike.com/docs/operations/install) to install it.
-- **Aerospike C# Client** — if you don’t have it installed, [click here](http://www.aerospike.com/docs/client/csharp/install) to install it.
+- **C# Developers - Aerospike C# Client** — if you don’t have it installed, [click here](http://www.aerospike.com/docs/client/csharp/install) to install it.
+- **Java Developers - Aerospike Java Client** — if you don’t have it installed, [click here](http://www.aerospike.com/docs/client/java/install) to install it.
 
 ## You Will Learn
 
@@ -91,5 +92,5 @@ username* | string | dash
 
 # Next Step
 
-Browse and/or download complete solution in [C#](https://github.com/aerospike/aerospike-sample-applications/tree/master/csharp/tweetaspike), [Java](https://github.com/aerospike/aerospike-sample-applications/tree/master/java/tweetaspike) or [Go](https://github.com/aerospike/aerospike-sample-applications/tree/master/go/tweetaspike)
+Browse and/or download complete solution in [C#](https://github.com/aerospike/aerospike-sample-applications/tree/master/csharp/tweetaspike) or [Java](https://github.com/aerospike/aerospike-sample-applications/tree/master/java/tweetaspike)
 
