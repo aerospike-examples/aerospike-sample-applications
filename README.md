@@ -4,12 +4,12 @@ The purpose of this sample application is to show that Aerospike data structures
 
 ## Prerequisites: 
 
-- **Aerospike Server** - If you don't have it installed, [click here](http://www.aerospike.com/docs/operations/install) to install it.
+**Aerospike Server** - If you don't have it installed, [click here](http://www.aerospike.com/docs/operations/install) to install it.
 
-#### AND
-- **For C# Developers: Aerospike C# Client** — if you don’t have it installed, [click here](http://www.aerospike.com/docs/client/csharp/install) to install it.
-#### OR
-- **For Java Developers: Aerospike Java Client** — if you don’t have it installed, [click here](http://www.aerospike.com/docs/client/java/install) to install it.
+#### And
+
+**For C# Developers: Aerospike C# Client** — if you don’t have it installed, [click here](http://www.aerospike.com/docs/client/csharp/install) to install it.
+**For Java Developers: Aerospike Java Client** — if you don’t have it installed, [click here](http://www.aerospike.com/docs/client/java/install) to install it.
 
 ## You Will Learn
 
