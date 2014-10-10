@@ -1,18 +1,11 @@
----
-title: Sample Application
-description: This tutorial describes the design and implementation of a twitter-like sample application written with Aerospike as the only database.
-styles:
-  - /assets/styles/ui/steps.css
----
-
 ## Overview
 
 The purpose of this sample application is to show that Aerospike data structures on top of a key-value store are an effective way to write applications with Aerospike as the only database. To demonstrate, this sample describes the design and implementation of a twitter-like application. The code is easy to follow and substantial enough to be a foundation in learning how to leverage Aerospike's technology and it can also be used as a "seed" application that you can expand.
 
 ## Prerequisites: 
 
-- **Aerospike Server** - If you don't have it installed, [click here](/docs/operations/install) to install it.
-- **Aerospike C# Client** — if you don’t have it installed, [click here](../../install) to install it.
+- **Aerospike Server** - If you don't have it installed, [click here](http://www.aerospike.com/docs/operations/install) to install it.
+- **Aerospike C# Client** — if you don’t have it installed, [click here](http://www.aerospike.com/docs/client/csharp/install) to install it.
 
 ## You Will Learn
 
