@@ -1,4 +1,4 @@
-package com.aerospike.developer.training;
+package com.aerospike.examples.tweetaspike;
 
 import java.io.BufferedReader;
 import java.io.Console;

@@ -20,7 +20,7 @@
  * IN THE SOFTWARE.
  ******************************************************************************/
 
-package com.aerospike.developer.training;
+package com.aerospike.examples.tweetaspike;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -62,10 +62,6 @@ public class Program {
 
 	public Program(String host, int port, String namespace, String set)
 			throws AerospikeException {
-		// Establish a connection to Aerospike cluster
-		ClientPolicy cPolicy = new ClientPolicy();
-		cPolicy.timeout = 500;
-		this.client = new AerospikeClient(cPolicy, "127.0.0.1", port);
 		this.seedHost = host;
 		this.port = port;
 		this.namespace = namespace;
@@ -74,7 +70,17 @@ public class Program {
 		this.writePolicy.timeout = 100;
 		this.policy = new Policy();
 		this.policy.timeout = 100;
+		// Establish a connection to Aerospike cluster
+		ClientPolicy cPolicy = new ClientPolicy();
+		cPolicy.timeout = 500;
+		this.client = new AerospikeClient(cPolicy, this.seedHost, this.port);
 	}
+	
+	protected void finalize() throws Throwable {
+		if (this.client != null){
+			this.client.close();
+		}
+	};
 
 	public static void main(String[] args) throws AerospikeException {
 		try {
@@ -129,7 +135,6 @@ public class Program {
 	}
 
 	public void work() throws Exception {
-		console.printf("***** Welcome to Aerospike Developer Training *****\n");
 		try {
 			console.printf("INFO: Connecting to Aerospike cluster...");
 

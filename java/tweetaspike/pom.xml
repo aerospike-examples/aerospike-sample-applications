@@ -75,7 +75,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>com.aerospike.developer.training.Program</mainClass>
+							<mainClass>com.aerospike.examples.tweetaspike.Program</mainClass>
 						</manifest>
 					</archive>
 					<finalName>${project.artifactId}-${project.version}-full</finalName>

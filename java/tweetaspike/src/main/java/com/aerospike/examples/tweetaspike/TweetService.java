@@ -20,7 +20,7 @@
  * IN THE SOFTWARE.
  ******************************************************************************/
 
-package com.aerospike.developer.training;
+package com.aerospike.examples.tweetaspike;
 
 import java.io.File;
 import java.util.Random;
