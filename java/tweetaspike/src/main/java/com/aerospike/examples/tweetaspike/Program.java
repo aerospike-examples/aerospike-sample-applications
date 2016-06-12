@@ -75,7 +75,7 @@ public class Program {
 		cPolicy.timeout = 500;
 		this.client = new AerospikeClient(cPolicy, this.seedHost, this.port);
 	}
-	
+
 	protected void finalize() throws Throwable {
 		if (this.client != null){
 			this.client.close();
@@ -165,7 +165,7 @@ public class Program {
 				console.printf("0> Exit\n");
 				console.printf("\nSelect 0-7 and hit enter:\n");
 				int feature = Integer.parseInt(console.readLine());
-				
+
 				if (feature != 0) {
 					switch (feature) {
 					case 1:
@@ -332,12 +332,12 @@ public class Program {
 	public void connectWithClientPolicy() throws AerospikeException {
 		// Java connection with Client policy
 		ClientPolicy clientPolicy = new ClientPolicy();
-		clientPolicy.maxThreads = 200; //200 threads
+//		clientPolicy.maxThreads = 200; //200 threads
 		clientPolicy.maxSocketIdle = 3; // 3 seconds
 		AerospikeClient client = new AerospikeClient(clientPolicy, "a.host", 3000);
 
 	}
-	
+
 	public void deleteBin(String username) throws AerospikeException{
 		// Java delete a bin
 		WritePolicy wPolicy = new WritePolicy();
