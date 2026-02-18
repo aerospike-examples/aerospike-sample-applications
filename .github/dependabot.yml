@@ -1,0 +1,11 @@
+version: 2
+updates:
+  - package-ecosystem: nuget
+    directory: /csharp/tweetaspike/AerospikeTraining
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /java/tweetaspike
+    schedule:
+      interval: daily
